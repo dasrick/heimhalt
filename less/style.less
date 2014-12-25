@@ -1,0 +1,35 @@
+// the colorset colors
+@color1: #56B3FF; // blue main
+@color2: #176DB2; // blue dark
+@color3: #71BFFF; // blue light
+@color4: #B27619; // complementary dark
+@color5: #FFC770; // complementary light
+@basic-bg: #42575E;
+
+
+html, body {
+  height: 100%;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: @basic-bg;
+}
+.box-center-outer {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.box-center-inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+h1 {
+  font-weight: 700;
+  text-shadow: 0 1px 0 lighten(@basic-bg, 10%),  0 -1px 0 darken(@basic-bg, 10%);
+  margin-bottom: 0;
+  color: #ccc;
+}
+h1 span:nth-child(2) {
+  color: @color1;
+}
